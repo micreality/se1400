@@ -116,6 +116,12 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+.nav-logo img {
+    height: 30px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -138,8 +144,11 @@ h1, h2, h3 {
 .nav-links a:hover {
     color: #4a90e2;
 }
+#activepage a {
+    color: #b933f7;
+}
 #activepage a:hover {
-    color: #6e0a9c;
+    color: #4a90e2;
 }
 .nav-links-active{
     transform: translateX(0%) !important;
