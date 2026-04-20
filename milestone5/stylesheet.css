@@ -241,3 +241,8 @@ h1, h2, h3 {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+.footer{
+    background-color:var(--color-bg-footer);
+    grid-row:auto;  
+    grid-column: 2/8;
+}
