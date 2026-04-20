@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Pro Photo</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: "ZGU2NjI0ODEtOTMxZi00YTAyLWJmZmEtMzc4MzU5OGY2MWJjNjM5MTE4NjAwMDk1NTMxMTM3",
+            loadStrategy: "on-user-interaction",
+        };
+
+        (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li id="activepage"><a href="services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <header class="box header">
+            <h1>Our Services</h1>
+            <p>Professional photography services cause your mom with a iphone 12 isnt enought some times.</p>
+        </header>
+        <section class="box service">
+            <h2>Portrait Photography</h2>
+            <p>Professional headshots and portraits for individuals and families. Perfect for LinkedIn, websites, or personal keepsakes.</p>
+            <p><strong>$150</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="portrait-session"
+                data-item-price="150.00"
+                data-item-url="/services.html"
+                data-item-description="Professional portrait photography session"
+                data-item-name="Portrait Photography Session">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Event Photography</h2>
+            <p>Capture the magic of your special events - weddings, corporate events, parties, and more. Full-day coverage with edited photos. ALSO PRICE WILL INCREASE IF FOOD ISNT INCLUDED OR U A BCH.</p>
+            <p><strong>$500 - $10,000</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="event-coverage"
+                data-item-price="500.00"
+                data-item-url="/services.html"
+                data-item-description="Full event photography coverage"
+                data-item-name="Event Photography Coverage">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Product Photography</h2>
+            <p>High-quality product shots for e-commerce, catalogs, or marketing materials. Studio setup with professional lighting.</p>
+            <p><strong>$200</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="product-shoot"
+                data-item-price="200.00"
+                data-item-url="/services.html"
+                data-item-description="Professional product photography"
+                data-item-name="Product Photography Shoot">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Photo Editing Package</h2>
+            <p>Professional photo editing services including retouching, color correction, and enhancement, because trust me. lightroom auto doesnt do your work justice.</p>
+            <p><strong>$50</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="photo-editing"
+                data-item-price="50.00"
+                data-item-url="/services.html"
+                data-item-description="Professional photo editing services"
+                data-item-name="Photo Editing Package">
+                Add to Cart
+            </button>
+        </section>
+        <footer class="box footer">
+            <h3>Contact Us</h3>
+            <p>Ready to book your session? Get in touch to discuss your photography needs.</p>
+            <p>Email: info@prophoto.com | Phone: (555) 123-4567</p>
+        </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('nav-links-active');
+        }
+    </script>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@prophoto.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: ur mums house</p>
+        </div>
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#" target="_blank">FaceBOOOkk</a></li>
+                <li><a href="#" target="_blank">DaGram</a></li>
+                <li><a href="#" target="_blank">Tweet Tweet</a></li>
+                <li><h6>no they dont actually work</h6></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2027 cause we from da future Pro Photo. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
