@@ -1,0 +1,22 @@
+:root {
+    /* Background Colors */
+    --color-bg-primary: #1e1e2e;
+    --color-bg-secondary: #11111b;
+    --color-bg-tertiary: #181825;
+    --color-bg-navbar: #313244;
+    --color-bg-footer: #313244;
+    --color-bg-header-dark: #7f849c;
+    --color-bg-header-light: #bac2de;
+    
+    /* Text Colors */
+    --color-text-primary: #cdd6f4;
+    --color-text-secondary: #11111b;
+    --color-text-light: #a6adc8;
+    
+    /* Border Colors */
+    --color-border-primary: #6c7086;
+    
+    /* Accent Colors */
+    --color-accent-primary: #b4befe;
+    --color-accent-secondary:#cba6f7;
+}
