@@ -37,8 +37,22 @@ body {
 
 .header {
     grid-column: 2 / 8;
-    background: linear-gradient(to right, var(--color-bg-header-dark), var(--color-bg-header-light));
+    background-color: var(--color-accent-primary);
     color: var(--color-text-secondary);
+}
+#header_img{
+    background-color: var(--color-accent-secondary);
+    grid-column: 2 / 8;
+    color: var(--color-text-secondary);
+    grid-column: 1/11;
+    height:100%;
+    height:280px;
+    width:100%;
+    border-width:.2px;
+    padding:5px;
+    padding-left:0px;
+    padding-right:0px;
+    object-fit:cover;
 }
 
 .feature-left {
@@ -54,7 +68,11 @@ body {
     height: 350px;
     align-self: end;
     background: var(--color-bg-tertiary);
+    text-align:center;
+    font-face: "VTC Carrie";
+    font-size: 13px;
 }
+
 
 .banner {
     grid-column: 2 / 8;
