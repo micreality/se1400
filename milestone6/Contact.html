@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pro Photo</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li id="activepage"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+        <header class="box header">
+            <h1>You can try, but I wont answer</h1>
+            <p class="small-text">you are welcome to try and sent a request, but it doesnt work lol. also Ms hill could you help me make it acutally work? I think it would be fun to try to.</p>
+        </header>
+
+        <aside class="box sidebar-left contact-sidebar" style="height: auto;">
+            <h5>(idk what to put here change later)</h5>
+            <p>I'm currently unavailable because im to busy working on my linux class.</p>
+            
+            <h3>Office Hours</h3>
+            <p class="small-text">Mon - Fri: 9:00 PM - 9:02 PM<br>
+            Sat: I dont work saturdays cause I have a life<br>
+            Sun: I actually do work sundays :,)</p>
+            
+            <h3>Local Shoots</h3>
+            <p class="small-text">I will walk down my street. anyting further than that, find somone else</p>
+        </aside>
+
+        <main class="box main-content" style="height: auto;">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Ya Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ya Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What Chu Want?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Dont Make it to Long, or I Wont Read it lol" required></textarea>
+                </div>
+                /* funny how I just did the java for this, but i didnt use it here lol. might do that later if its required, but i dont want to. */<br>
+                /* just in case you didnt see the other comment btw, Ms hill I would like it if you could help me maybe try to make the forms actually work, like email me*/
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </main>
+
+        <footer class="box footer">
+            <h3>Urgent Stuff? Maybe?</h3>
+            <p class="small-text">I had the idea of placing a form here for more urgent inquiries, but I want to focus my time in other areas. so maybe later.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('nav-links-active');
+            const burger = document.querySelector('.burger');
+            burger.classList.toggle('toggle');
+        }
+    </script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p>Email: 27shieltylal@gmail.com</p>
+                <p>Phone: (435) 288-9335</p>
+                <p>Address: ur mums house</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="#" target="_blank">FaceBOOOkk</a></li>
+                    <li><a href="#" target="_blank">DaGram</a></li>
+                    <li><a href="#" target="_blank">Tweet Tweet</a></li>
+                    <li><h6>no they dont actually work</h6></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2027 cause we from da future Pro Photo. All rights and images reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

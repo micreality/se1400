@@ -297,7 +297,8 @@ h1, h2, h3 {
 }
 .footer{
     background-color:var(--color-bg-footer);
-    grid-row:auto;  
+    grid-row: 4;
+    width:auto;  
     grid-column: 2/8;
 }
 
@@ -495,4 +496,73 @@ h1, h2, h3 {
     .portfolio-image {
         height: 250px;
     }
+    .footer{
+        grid-column:2/3;
+    }
+    /*apparently this was always broken, so fixed it now lol */
 }
+/*I built the contact page finaly lol */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: var(--color-accent-primary);
+            font-size: 0.9rem;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border-primary);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background-color: var(--color-accent-primary);
+            color: var(--color-text-secondary);
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--color-accent-secondary);
+            transform: translateY(-2px);
+        }
+
+        .contact-sidebar h3 {
+            color: var(--color-accent-primary);
+            margin-top: 20px;
+        }
+
+        .contact-sidebar p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        /* apparently i never used h5 tags lol, so i need to add that to. also im trying to add more comments so its easier to see my train of thought. */
+        h5 {
+            color: var(--color-text-primary);
+        }
