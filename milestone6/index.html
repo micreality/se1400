@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 3</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
+    <ul class="nav-links" id="navLinks">
+        <li id="activepage"><a href="index.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    <div class="grid-container">
+        <header class="box header">
+            <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo orci non purus rutrum, vitae sodales elit auctor. Quisque ut nulla molestie, molestie est bibendum, elementum elit. Cras in posuere elit. In sit amet sapien ac leo aliquet tincidunt quis tincidunt ligula. Vivamus blandit erat vel tempor porta. Sed hendrerit nulla eget fermentum tincidunt. Pellentesque non tempus dui, egestas vulputate sapien.
+            In eleifend ante vitae sem pellentesque dictum. Sed pellentesque nisi lorem, vel posuere lacus ultrices vitae. Nunc ex ante, ornare vitae eleifend non, mattis at ligula. Aliquam laoreet sapien dui, sit amet placerat tellus egestas ac. Fusce tellus nulla, commodo ac varius non, ultricies in mi. Etiam cursus arcu a mi pellentesque, a mattis velit auctor. </p>
+        </header>
+        <section class="box feature-left"><h1>Image here for display</h1></section>
+        <section class="box feature-right"><h1>description of the Image</h1></section>
+        <nav class="box banner">
+            <div class="banner-images">
+                <img src="Assets/pexels-instaszek-31940527.jpg" alt="Image 1">
+                <img src="Assets/pexels-jing-zhan-1250761192-27667231.jpg" alt="Image 2">
+                <img src="Assets/pexels-silverkblack-36713742.jpg" alt="Image 3">
+                <img src="Assets/pexels-anatoleos-34703257.jpg" alt="Image 4">
+                <img src="Assets/pexels-moizafzal-32838310.jpg" alt="Image 5">
+                <img src="Assets/pexels-son-tung-tran-17375059-6735679.jpg" alt="Image 6">
+            </div>
+        </nav>
+        <aside class="box sidebar-left"><h1>image</h1></aside>
+        <main class="box main-content"><h2>describe image</h2></main>
+        <footer class="box footer"><h3>contact etc</h3></footer>
+    </div>
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('nav-links-active');
+        
+        // hehe bourger
+        const burger = document.querySelector('.burger');
+        burger.classList.toggle('toggle');
+    }
+</script>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@prophoto.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: ur mums house</p>
+        </div>
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#" target="_blank">FaceBOOOkk</a></li>
+                <li><a href="#" target="_blank">DaGram</a></li>
+                <li><a href="#" target="_blank">Tweet Tweet</a></li>
+                <li><h6>no they dont actually work</h6></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2027 cause we from da future Pro Photo. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
