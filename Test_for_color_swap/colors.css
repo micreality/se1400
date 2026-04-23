@@ -6,7 +6,7 @@
     --color-bg-navbar: #313244;       /* surface0 */
     --color-bg-footer: #313244;
     --color-text-primary: #cdd6f4;    /* text */
-    --color-text-secondary: #11111b;  /* base (for contrast on light buttons) */
+    --color-text-secondary: #11111b;  /* base */
     --color-text-light: #a6adc8;      /* subtext0 */
     --color-border-primary: #6c7086;  /* overlay0 */
     --color-accent-primary: #b4befe;  /* lavender */
@@ -58,7 +58,7 @@
     --color-accent-secondary: #c6a0f6;
 }
 /*thx ms hill for making us do comments, it genuenly makes coding easier when i can remember which theme is which lol*/
-/* NORD - Cold, arctic, and clean */
+/* NORD */
 [data-theme="nord"] {
     --color-bg-primary: #2e3440;      /* polar night 0 */
     --color-bg-secondary: #242933;    /* polar night 1 */
@@ -73,7 +73,7 @@
     --color-accent-secondary: #b48ead; /* aurora pink/purple */
 }
 
-/* TOKYO NIGHT - Neon city vibes */
+/* TOKYO NIGHT */
 [data-theme="tokyo-night"] {
     --color-bg-primary: #1a1b26;
     --color-bg-secondary: #16161e;
@@ -88,7 +88,7 @@
     --color-accent-secondary: #bb9af7; /* purple */
 }
 
-/* EVERFOREST - Warm, organic, and easy on the eyes */
+/* EVERFOREST */
 [data-theme="everforest"] {
     --color-bg-primary: #2d353b;
     --color-bg-secondary: #232a2e;
@@ -103,7 +103,7 @@
     --color-accent-secondary: #dbbc7f; /* yellow/orange */
 }
 
-/* ROSE PINE - Dreamy, moody, and chic */
+/* ROSE PINE */
 [data-theme="rose-pine"] {
     --color-bg-primary: #191724;
     --color-bg-secondary: #121019;
