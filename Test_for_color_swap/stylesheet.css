@@ -7,7 +7,6 @@ html {
 body {
     margin: 0;
     background-color: var(--color-bg-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--color-text-primary);
     overflow-x: hidden;
         font-family: "VTC Carrie";
