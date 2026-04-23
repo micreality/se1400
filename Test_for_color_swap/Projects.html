@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="mocha">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,18 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="Contact.html">Contact</a></li>
     </ul>
+    <div class="theme-switcher">
+<select id="cat-switcher">
+    <option value="mocha">🌿 Mocha</option>
+    <option value="macchiato">🌺 Macchiato</option>
+    <option value="frappe">🧊 Frappé</option>
+    <option value="latte">☀️ Latte</option>
+    <option value="nord">❄️ Nord</option>
+    <option value="tokyo-night">🌃 Tokyo Night</option>
+    <option value="everforest">🌲 Everforest</option>
+    <option value="rose-pine">🌹 Rose Pine</option>
+</select>
+</div>
     <div class="burger" onclick="toggleMenu()">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -108,21 +120,53 @@
         </div>
     </div>
 <script>
+    // HEHE BOURGER
     function toggleMenu() {
         const nav = document.getElementById('navLinks');
         nav.classList.toggle('nav-links-active');
-        
-        // hehe bourger
         const burger = document.querySelector('.burger');
         burger.classList.toggle('toggle');
     }
+
+const switcher = document.getElementById('cat-switcher');
+
+const setTheme = (theme, animate = false) => {
+    if (animate) {
+        // adds a class if it detects animation should take place, again using the css
+        document.documentElement.classList.add('theme-transition');
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('selected-cat', theme);
+    switcher.value = theme;
+
+    if (animate) {
+        // checks if i want animation because page loading looks weird
+        setTimeout(() => {
+            document.documentElement.classList.remove('theme-transition');
+        }, 400);
+    }
+};
+
+// This is where i put the animation, the complicated stuff is in my css. also this was an idea i addaped from a 3rd party code provider.
+switcher.addEventListener('change', (e) => {
+    setTheme(e.target.value, true);
+});
+
+// page loading so it pulls the theme
+const savedCat = localStorage.getItem('selected-cat') || 'mocha';
+setTheme(savedCat, false);
 </script>
+
+</body>
+</html>
+
 <footer class="site-footer">
     <div class="footer-content">
         <div class="contact-info">
             <h3>Contact Me</h3>
-            <p>Email: info@prophoto.com</p>
-            <p>Phone: (555) 123-4567</p>
+            <p>Email: 27shieltylal@gmail.com</p>
+            <p>Phone: (435) 288-9335</p>
             <p>Address: ur mums house</p>
         </div>
         <div class="social-links">
@@ -140,4 +184,5 @@
     </div>
 </footer>
 </body>
+
 </html>

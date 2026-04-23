@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mocha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Pro Photo</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: "ZGU2NjI0ODEtOTMxZi00YTAyLWJmZmEtMzc4MzU5OGY2MWJjNjM5MTE4NjAwMDk1NTMxMTM3",
+            loadStrategy: "on-user-interaction",
+        };
+
+        (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li id="activepage"><a href="services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-switcher">
+<select id="cat-switcher">
+    <option value="mocha">🌿 Mocha</option>
+    <option value="macchiato">🌺 Macchiato</option>
+    <option value="frappe">🧊 Frappé</option>
+    <option value="latte">☀️ Latte</option>
+    <option value="nord">❄️ Nord</option>
+    <option value="tokyo-night">🌃 Tokyo Night</option>
+    <option value="everforest">🌲 Everforest</option>
+    <option value="rose-pine">🌹 Rose Pine</option>
+</select>
+</div>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <header class="box"id="header_img">
+            <img src="Assets/0186D09D-F1DB-4FAF-85A1-5274CDDB99EF_1_102_o.jpeg" alt="Service Image" style="width:100%; height:400%; object-fit:cover; position:relative; top:0px">
+        </header>
+        <header class="box header">
+            <h1>Our Services</h1>
+            <p>Professional photography services cause your mom with a iphone 12 isnt enought some times(Quote from my Grandma btw).</p>
+        </header>
+        
+        <section class="box service">
+            <h2>Portrait Photography</h2>
+            <p>Professional headshots and portraits for individuals and families. Perfect for LinkedIn, websites, or personal keepsakes. And no, the price does not include editing. do it yourself</p>
+            <p><strong>$150</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="portrait-session"
+                data-item-price="150.00"
+                data-item-url="/services.html"
+                data-item-description="Professional portrait photography session"
+                data-item-name="Portrait Photography Session">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Event Photography</h2>
+            <p>Capture the magic of your special events - weddings, corporate events, parties, and more. Full-day coverage with edited photos. ALSO PRICE WILL INCREASE IF FOOD ISNT INCLUDED OR U SUCK.</p>
+            <p><strong>$500 - $10,000,000,000,000</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="event-coverage"
+                data-item-price="500,000.00"
+                data-item-url="/services.html"
+                data-item-description="Full event photography coverage"
+                data-item-name="Event Photography Coverage">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Product Photography</h2>
+            <p>High-quality product shots for e-commerce, catalogs, or marketing materials. Studio setup with professional lighting. and no that doesnt mean a flashlight or single key light</p>
+            <p><strong>$200</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="product-shoot"
+                data-item-price="200.00"
+                data-item-url="/services.html"
+                data-item-description="Professional product photography"
+                data-item-name="Product Photography Shoot">
+                Add to Cart
+            </button>
+        </section>
+        <section class="box service">
+            <h2>Photo Editing Package</h2>
+            <p>Professional photo editing services including retouching, color correction, and enhancement, because trust me. lightroom auto doesnt do your work justice.</p>
+            <p><strong>$5 Golden Dabloons</strong></p>
+            <button class="snipcart-add-item"
+                data-item-id="photo-editing"
+                data-item-price="5.00"
+                data-item-url="/services.html"
+                data-item-description="Professional photo editing services"
+                data-item-name="Photo Editing Package">
+                Add to Cart
+                <!--wants originally going to do this one, but i messed around with lighroom auto on a unrelated assingment, and is sucked. so this idea was born.-->
+            </button>
+        </section>
+        <footer class="box footer" style:"grid-row: I CANT GET IT TO MOVE SO ITS STAYING THERE;">
+            <h3>Contact Us</h3>
+            <p>Ready to booooooook your session? Get in touch to discuss how much money u need to pay us</p>
+            <p>Email: 27shieltylal@gmail.com | Phone: (435) 288-9335</p>
+        </footer>
+    </div>
+<script>
+    // HEHE BOURGER
+    function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('nav-links-active');
+        const burger = document.querySelector('.burger');
+        burger.classList.toggle('toggle');
+    }
+
+const switcher = document.getElementById('cat-switcher');
+
+const setTheme = (theme, animate = false) => {
+    if (animate) {
+        // adds a class if it detects animation should take place, again using the css
+        document.documentElement.classList.add('theme-transition');
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('selected-cat', theme);
+    switcher.value = theme;
+
+    if (animate) {
+        // checks if i want animation because page loading looks weird
+        setTimeout(() => {
+            document.documentElement.classList.remove('theme-transition');
+        }, 400);
+    }
+};
+
+// This is where i put the animation, the complicated stuff is in my css. also this was an idea i addaped from a 3rd party code provider.
+switcher.addEventListener('change', (e) => {
+    setTheme(e.target.value, true);
+});
+
+// page loading so it pulls the theme
+const savedCat = localStorage.getItem('selected-cat') || 'mocha';
+setTheme(savedCat, false);
+</script>
+
+</body>
+</html>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Me</h3>
+            <p>Email: 27shieltylal@gmail.com</p>
+            <p>Phone: (435) 288-9335</p>
+            <p>Address: ur mums house</p>
+        </div>
+        <div class="social-links">
+            <h3>Follow Me</h3>
+            <ul>
+                <li><a href="#" target="_blank">FaceBOOOkk</a></li>
+                <li><a href="#" target="_blank">DaGram</a></li>
+                <li><a href="#" target="_blank">Tweet Tweet</a></li>
+                <li><h6>no they dont actually work</h6></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2027 cause we from da future Pro Photo. All rights and images reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>

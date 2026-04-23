@@ -1,0 +1,119 @@
+/* Catppuccin Mocha the html tag sets this as default because this is my favorite lol */
+:root, [data-theme="mocha"] {
+    --color-bg-primary: #1e1e2e;      /* base */
+    --color-bg-secondary: #11111b;    /* crust */
+    --color-bg-tertiary: #181825;     /* mantle */
+    --color-bg-navbar: #313244;       /* surface0 */
+    --color-bg-footer: #313244;
+    --color-text-primary: #cdd6f4;    /* text */
+    --color-text-secondary: #11111b;  /* base (for contrast on light buttons) */
+    --color-text-light: #a6adc8;      /* subtext0 */
+    --color-border-primary: #6c7086;  /* overlay0 */
+    --color-accent-primary: #b4befe;  /* lavender */
+    --color-accent-secondary: #cba6f7; /* mauve */
+}
+
+/* Catppuccin Latte */
+[data-theme="latte"] {
+    --color-bg-primary: #eff1f5;
+    --color-bg-secondary: #dce0e8;
+    --color-bg-tertiary: #e6e9ef;
+    --color-bg-navbar: #ccd0da;
+    --color-bg-footer: #ccd0da;
+    --color-text-primary: #4c4f69;
+    --color-text-secondary: #eff1f5;
+    --color-text-light: #6c6f85;
+    --color-border-primary: #9ca0b0;
+    --color-accent-primary: #7287fd;
+    --color-accent-secondary: #8839ef;
+}
+
+/* Catppuccin Frappé */
+[data-theme="frappe"] {
+    --color-bg-primary: #303446;
+    --color-bg-secondary: #232634;
+    --color-bg-tertiary: #292c3c;
+    --color-bg-navbar: #414559;
+    --color-bg-footer: #414559;
+    --color-text-primary: #c6d0f5;
+    --color-text-secondary: #303446;
+    --color-text-light: #a5adce;
+    --color-border-primary: #737994;
+    --color-accent-primary: #8caaee;
+    --color-accent-secondary: #ca9ee6;
+}
+
+/* Catppuccin Macchiato */
+[data-theme="macchiato"] {
+    --color-bg-primary: #24273a;
+    --color-bg-secondary: #181926;
+    --color-bg-tertiary: #1e2030;
+    --color-bg-navbar: #363a4f;
+    --color-bg-footer: #363a4f;
+    --color-text-primary: #cad3f5;
+    --color-text-secondary: #24273a;
+    --color-text-light: #a5adcb;
+    --color-border-primary: #6e738d;
+    --color-accent-primary: #8aadf4;
+    --color-accent-secondary: #c6a0f6;
+}
+/*thx ms hill for making us do comments, it genuenly makes coding easier when i can remember which theme is which lol*/
+/* NORD - Cold, arctic, and clean */
+[data-theme="nord"] {
+    --color-bg-primary: #2e3440;      /* polar night 0 */
+    --color-bg-secondary: #242933;    /* polar night 1 */
+    --color-bg-tertiary: #3b4252;     /* polar night 3 */
+    --color-bg-navbar: #434c5e;       /* polar night 4 */
+    --color-bg-footer: #434c5e;
+    --color-text-primary: #eceff4;    /* snow storm */
+    --color-text-secondary: #2e3440;
+    --color-text-light: #d8dee9;
+    --color-border-primary: #4c566a;
+    --color-accent-primary: #88c0d0;  /* frost blue */
+    --color-accent-secondary: #b48ead; /* aurora pink/purple */
+}
+
+/* TOKYO NIGHT - Neon city vibes */
+[data-theme="tokyo-night"] {
+    --color-bg-primary: #1a1b26;
+    --color-bg-secondary: #16161e;
+    --color-bg-tertiary: #1f2335;
+    --color-bg-navbar: #24283b;
+    --color-bg-footer: #24283b;
+    --color-text-primary: #a9b1d6;
+    --color-text-secondary: #1a1b26;
+    --color-text-light: #787c99;
+    --color-border-primary: #414868;
+    --color-accent-primary: #7aa2f7;  /* blue */
+    --color-accent-secondary: #bb9af7; /* purple */
+}
+
+/* EVERFOREST - Warm, organic, and easy on the eyes */
+[data-theme="everforest"] {
+    --color-bg-primary: #2d353b;
+    --color-bg-secondary: #232a2e;
+    --color-bg-tertiary: #343f44;
+    --color-bg-navbar: #3d484d;
+    --color-bg-footer: #3d484d;
+    --color-text-primary: #d3c6aa;
+    --color-text-secondary: #2d353b;
+    --color-text-light: #9da9a0;
+    --color-border-primary: #56635f;
+    --color-accent-primary: #a7c080;  /* green */
+    --color-accent-secondary: #dbbc7f; /* yellow/orange */
+}
+
+/* ROSE PINE - Dreamy, moody, and chic */
+[data-theme="rose-pine"] {
+    --color-bg-primary: #191724;
+    --color-bg-secondary: #121019;
+    --color-bg-tertiary: #1f1d2e;
+    --color-bg-navbar: #26233a;
+    --color-bg-footer: #26233a;
+    --color-text-primary: #e0def4;
+    --color-text-secondary: #191724;
+    --color-text-light: #908caa;
+    --color-border-primary: #403d52;
+    --color-accent-primary: #ebbcba;  /* rose */
+    --color-accent-secondary: #c4a7e7; /* iris */
+}

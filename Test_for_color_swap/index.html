@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mocha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone 3</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
+    <ul class="nav-links" id="navLinks">
+        <li id="activepage"><a href="index.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="theme-switcher">
+<select id="cat-switcher">
+    // just a normall dropdown menu, but it has values that are monitored by the js
+    <option value="mocha">🌿 Mocha</option>
+    <option value="macchiato">🌺 Macchiato</option>
+    <option value="frappe">🧊 Frappé</option>
+    <option value="latte">☀️ Latte</option>
+    <option value="nord">❄️ Nord</option>
+    <option value="tokyo-night">🌃 Tokyo Night</option>
+    <option value="everforest">🌲 Everforest</option>
+    <option value="rose-pine">🌹 Rose Pine</option>
+</select>
+</div>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    <div class="grid-container">
+        <header class="box header">
+            <p class="small-text">My website is my design for a photography business. I enjoy photography, so i contructed this like an actuall business webiste, with the exeption of the hanfull of jokes sprewn around. I also planned on replacing the photos with actual images I took, if i ever get around to it lol</p>
+        </header>
+        <section class="box feature-left"><img src="assets/7107F1F1-E750-448A-B821-5C1860E45CF7_1_102_a.jpeg" alt="Feature Image" style="width:100%; height:100%; object-fit:cover;"></section>
+        <section class="box feature-right"><h1>This image was taken from a crab apple tree in my neiberhood. I was walking home durnig the rain, and thought it looked especially beutifal. I also had this image published into the st geroge paper under my middle school news program.</h1></section>
+        <nav class="box banner">
+            <div class="banner-images">
+                <img src="Assets/01FF1E05-EB43-40E0-BF82-24BFAB4BCD8D_1_102_a.jpeg" alt="Image 1">
+                <img src="Assets/132653E7-2E48-4A0A-B792-6C53A22921C3_1_102_o.jpeg" alt="Image 2">
+                <img src="Assets/19C50461-A69A-4F10-8854-32B976B8F15F_4_5005_c.jpeg" alt="Image 3">
+                <img src="Assets/20D37579-58A6-4B59-B6EB-675DA59B4170_1_102_o.jpeg" alt="Image 4">
+                <img src="Assets/330EF8BC-F7D7-497E-9B22-E349B1A7EC03_4_5005_c.jpeg" alt="Image 5">
+                <img src="Assets/3458A6C5-5626-460F-8317-D3F1986285FA_1_102_o.jpeg" alt="Image 6">
+                <img src="Assets/D1183A7E-C248-41C4-A481-F64BD36D8D31_4_5005_c.jpeg" alt="Image 7">
+                <img src="Assets/FE145261-6E70-4FD9-9538-5565739E57BE_1_102_a.jpeg" alt="Image 8">
+                <img src="Assets/E856AF97-B551-49FA-AC62-5CF0AA23BC03_1_102_o.jpeg" alt="Image 9">
+                <img src="Assets/CEA4CE88-3EEE-457F-A94D-49D4D861F347_1_102_a.jpeg" alt="Image 10">
+                <img src="Assets/AB4851E1-A524-4B93-9734-E38723FEEB47_1_102_o.jpeg" alt="Image 11">
+                <img src="Assets/90503CE3-9A9A-4C16-A78A-2485A93E3A5A_1_102_o.jpeg" alt="Image 12">
+            </div>
+        </nav>
+        <aside class="box sidebar-left"><img src="Assets/6A98FE4B-C53F-4965-889C-14FFF6882F6D_1_102_a.jpeg" alt="Sidebar Image" style="width:100%; height:100%; object-fit:cover;"></aside>
+        <main class="box main-content"><h2>This image is of a cherry tree down town blooming. I took this picture during the spring while out with freinds, because I found it to remind me of images ive seen of japanesse cherry trees.</h2></main>
+        <footer class="box footer"><h3>All images on this page and other(asside from the logo) are my own intellectual property, and any reuse of them must be with my permission. So please dont take my stuff Ms.Hill</h3></footer>
+    </div>
+<script>
+    // HEHE BOURGER
+    function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('nav-links-active');
+        const burger = document.querySelector('.burger');
+        burger.classList.toggle('toggle');
+    }
+
+const switcher = document.getElementById('cat-switcher');
+
+const setTheme = (theme, animate = false) => {
+    if (animate) {
+        // adds a class if it detects animation should take place, again using the css
+        document.documentElement.classList.add('theme-transition');
+    }
+
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('selected-cat', theme);
+    switcher.value = theme;
+
+    if (animate) {
+        // checks if i want animation because page loading looks weird
+        setTimeout(() => {
+            document.documentElement.classList.remove('theme-transition');
+        }, 400);
+    }
+};
+
+// This is where i put the animation, the complicated stuff is in my css. also this was an idea i addaped from a 3rd party code provider.
+switcher.addEventListener('change', (e) => {
+    setTheme(e.target.value, true);
+});
+
+// page loading so it pulls the theme
+const savedCat = localStorage.getItem('selected-cat') || 'mocha';
+setTheme(savedCat, false);
+</script>
+
+</body>
+</html>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Me</h3>
+            <p>Email: 27shieltylal@gmail.com</p>
+            <p>Phone: (435) 288-9335</p>
+            <p>Address: ur mums house</p>
+        </div>
+        <div class="social-links">
+            <h3>Follow Me</h3>
+            <ul>
+                <li><a href="#" target="_blank">FaceBOOOkk</a></li>
+                <li><a href="#" target="_blank">DaGram</a></li>
+                <li><a href="#" target="_blank">Tweet Tweet</a></li>
+                <li><h6>no they dont actually work</h6></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2027 cause we from da future Pro Photo. All rights and images reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>
