@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <div class="transition__div"></div>
     <nav class="navbar">
     <div class="nav-logo">Pro <img src="Assets/FinalLogo.png" alt="things"> Photo</div>
     <ul class="nav-links" id="navLinks">
@@ -25,6 +26,11 @@
     <option value="tokyo-night">🌃 Tokyo Night</option>
     <option value="everforest">🌲 Everforest</option>
     <option value="rose-pine">🌹 Rose Pine</option>
+    <option value="one-dark">💻 One Dark</option>
+    <option value="dracula">🧛 Dracula</option>
+    <option value="gruvbox">📻 Gruvbox</option>
+    <option value="matrix">📟 Matrix</option>
+    <option value="synthwave">🎆 Synthwave</option>
 </select>
 </div>
     <div class="burger" onclick="toggleMenu()">
@@ -157,6 +163,8 @@ switcher.addEventListener('change', (e) => {
 const savedCat = localStorage.getItem('selected-cat') || 'mocha';
 setTheme(savedCat, false);
 </script>
+<script src="Java.js"></script>
+
 
 </body>
 </html>

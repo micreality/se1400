@@ -1,7 +1,18 @@
 @import url('colors.css');
+@font-face {
+  font-family: 'E';
+  src: url('made-tommy.light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 
 html {
     overflow-x: hidden;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -9,7 +20,7 @@ body {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
     overflow-x: hidden;
-        font-family: "VTC Carrie";
+    font-family: 'E', sans-serif;
 }
 
 .grid-container {
@@ -69,7 +80,6 @@ body {
     align-self: end;
     background: var(--color-bg-tertiary);
     text-align:center;
-    font-family: "VTC Carrie";
     font-size: 13px;
 }
 
@@ -599,4 +609,24 @@ h1, h2, h3 {
     background-color: var(--color-bg-secondary);
     color: var(--color-text-primary);
     padding: 10px;
+}
+/* Tansition */
+.transition__div{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    transition: 1s;
+    will-change: transform;
+}
+
+.transition__div.animate__in{
+    transform: translateX(100%);
+}
+
+.transition__div.animate__out{
+    transform: translateX(200%);
 }
